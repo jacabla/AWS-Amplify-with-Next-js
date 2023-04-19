@@ -53,7 +53,6 @@ export default function Hero() {
               alt="Hero Illustration"
               layout="intrinsic"
               loading="eager"
-              placeholder="blur"
             />
           </div>
         </div>
