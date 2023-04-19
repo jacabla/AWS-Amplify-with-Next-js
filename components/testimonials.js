@@ -7,6 +7,7 @@ import userTwoImg from "../src/public/img/user2.jpg";
 import userThreeImg from "../src/public/img/user3.jpg";
 
 export default function Testimonials() {
+
   return (
     <Container>
       <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
@@ -67,7 +68,6 @@ function Avatar(props) {
           height="40"
           alt="Avatar"
           layout="responsive"
-          placeholder="blur"
         />
       </div>
       <div>
