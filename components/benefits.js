@@ -4,7 +4,7 @@ import Container from "./container";
 
 export default function Benefits(props) {
   const { data } = props;
-
+  const url = 'https://cf.ltkcdn.net/interiordesign/images/orig/328771-1600x1066-small-home-office-ideas.jpg'
   return (
     <>
       <Container className="flex flex-wrap mb-20 lg:gap-10 lg:flex-nowrap ">
@@ -14,11 +14,12 @@ export default function Benefits(props) {
           }`}>
           <div>
             <Image
-              src={data.image}
+              src="https://cf.ltkcdn.net/interiordesign/images/orig/328771-1600x1066-small-home-office-ideas.jpg"
               width="521"
               height="482"
               alt="Benefits"
               layout="intrinsic"
+              priority
             />
           </div>
         </div>
