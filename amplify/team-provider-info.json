@@ -17,6 +17,12 @@
       },
       "auth": {
         "nextjs0ee2c9a5": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "dvyz21hgzczq7",
+          "type": "manual"
+        }
       }
     }
   }
