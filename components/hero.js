@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Container from "./container";
-import heroImg from "../src/public/img/hero.png";
+import heroImg from "/src/public/img/benefit-one.png"; 
 
 export default function Hero() {
   return (
