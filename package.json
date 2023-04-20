@@ -12,6 +12,7 @@
     "@aws-amplify/ui-react": "^4.6.0",
     "@headlessui/react": "^1.7.14",
     "@heroicons/react": "^1.0.6",
+    "@react-google-maps/api": "^2.18.1",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "autoprefixer": "10.4.14",
     "aws-amplify": "^5.1.2",
