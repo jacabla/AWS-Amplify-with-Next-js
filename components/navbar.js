@@ -5,7 +5,7 @@ import Image from "next/image";
 import logosvg from "../src/public/logo.svg"
 
 export default function Navbar() {
-  const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
+  const navigation = ["Product", "Features", "Pricing", "Company", "Blog", "Contact us"];
   const logo = logosvg
   return (
     <div className="w-full">
@@ -77,15 +77,48 @@ export default function Navbar() {
         {/* menu  */}
         <div className="hidden text-center lg:flex lg:items-center">
           <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
-            {navigation.map((menu, index) => (
-              <li className="mr-3 nav__item" key={index}>
-                <Link href="/">
+              <li className="mr-3 nav__item">
+                <Link href="/product">
                   <p className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none">
-                    {menu}
+                    Product
                   </p>
                 </Link>
               </li>
-            ))}
+              <li className="mr-3 nav__item">
+                <Link href="/features">
+                  <p className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none">
+                    Features
+                  </p>
+                </Link>
+              </li>
+              <li className="mr-3 nav__item">
+                <Link href="/pricing">
+                  <p className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none">
+                    Pricing
+                  </p>
+                </Link>
+              </li>
+              <li className="mr-3 nav__item">
+                <Link href="/company">
+                  <p className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none">
+                    Company
+                  </p>
+                </Link>
+              </li>
+              <li className="mr-3 nav__item">
+                <Link href="/blog">
+                  <p className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none">
+                    Blog
+                  </p>
+                </Link>
+              </li>
+              <li className="mr-3 nav__item">
+                <Link href="/contactus">
+                  <p className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none">
+                    Contact us
+                  </p>
+                </Link>
+              </li>
           </ul>
         </div>
 
