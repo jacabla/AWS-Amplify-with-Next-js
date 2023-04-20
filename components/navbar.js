@@ -2,10 +2,11 @@ import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
 import { Disclosure } from "@headlessui/react";
 import Image from "next/image";
+import logosvg from "../src/public/logo.svg"
 
 export default function Navbar() {
   const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
-
+  const logo = logosvg
   return (
     <div className="w-full">
       <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0">
@@ -18,7 +19,7 @@ export default function Navbar() {
                   <p className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
                     <span>
                       <Image
-                        src="/img/logo.svg"
+                        src={logo}
                         alt="N"
                         width="32"
                         height="32"
