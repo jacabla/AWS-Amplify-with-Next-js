@@ -2,10 +2,12 @@ import Link from "next/link";
 import React from "react";
 import Container from "./container";
 import Image from "next/image";
+import logo from "../src/public/logo.svg"
 
 export default function Footer() {
   const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
   const legal = ["Terms", "Privacy", "Legal"];
+  const logosvg = logo
   return (
     <div className="relative">
       <Container>
@@ -17,7 +19,7 @@ export default function Footer() {
                 <p className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
                   <span>
                     <Image
-                      src="/img/logo.svg"
+                      src={logosvg}
                       alt="N"
                       width="32"
                       height="32"

@@ -5,10 +5,11 @@ const nextConfig = {
     remotePatterns : [
       {
         protocol: 'https',
-        hostname: "*"
+        hostname: "*",
       }
     ],
-    formats: ['image/webp', 'image/avif'],
+    domains: ['*'],
+    formats: ['image/avif', 'image/webp'],
     dangerouslyAllowSVG: true,
     contentDispositionType: 'attachment',
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
